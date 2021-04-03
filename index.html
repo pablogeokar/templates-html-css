@@ -8,7 +8,7 @@
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
     <link rel="icon" type="image/png" href="favicon.png" />
-    <title>Dashboard</title>
+    <title>Kontabb</title>
     <link
       rel="stylesheet"
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
@@ -22,40 +22,49 @@
   <body>
     <input type="checkbox" id="nav-toggle" />
     <div class="sidebar">
-      <div class="sidebar-brand">        
-        <img src="img/kontabb-brand.svg" />
-        <img src="img/kontabb.svg" />
+      <div class="sidebar-brand">
+        <img src="img/brand.svg" />
+        <img src="img/brand-text.svg" />
       </div>
 
       <div class="sidebar-menu">
         <ul>
           <li>
             <a href="" class="active"
-              ><i class="las la-igloo"></i><span>Dashboard</span></a
+              ><i class="las la-igloo"></i><span>Início</span></a
             >
           </li>
           <li>
-            <a href=""><i class="las la-users"></i><span>Customers</span></a>
-          </li>
-          <li>
-            <a href=""><i class="las la-clipboard"></i><span>Projects</span></a>
+            <a href=""><i class="las la-users"></i><span>Cadastros</span></a>
           </li>
           <li>
             <a href=""
-              ><i class="las la-shopping-bag"></i><span>Orders</span></a
-            >
-          </li>
-          <li>
-            <a href=""><i class="las la-receipt"></i><span>Inventory</span></a>
-          </li>
-          <li>
-            <a href=""
-              ><i class="las la-user-circle"></i><span>Accounts</span></a
+              ><i class="las la-receipt"></i><span>Depto. Contábil</span></a
             >
           </li>
           <li>
             <a href=""
-              ><i class="las la-clipboard-list"></i><span>Tasks</span></a
+              ><i class="las la-clipboard"></i><span>Depto. Fiscal</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i class="las la-clipboard"></i><span>Depto. Financeiro</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i class="las la-shopping-bag"></i><span>Depto. Pessoal</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i class="las la-clipboard-list"></i><span>Tarefas</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i class="las la-user-circle"></i><span>Usuários</span></a
             >
           </li>
         </ul>
@@ -69,21 +78,22 @@
           <label for="nav-toggle">
             <i class="las la-bars"></i>
           </label>
-
-          Dashboard
+          Início
         </h2>
 
         <div class="search-wrapper">
           <i class="las la-search"></i>
-          <input type="search" placeholder="Search here" />
+          <input type="search" placeholder="busca" />
         </div>
 
         <div class="user-wrapper">
-          <img src="img/Pablo500.jpg" width="30px" height="30px" alt="" />
           <div>
             <h4>Pablo George</h4>
             <small>Super Admin</small>
           </div>
+          <a href=""
+            ><img src="img/Pablo500.jpg" width="40px" height="40px"
+          /></a>
         </div>
       </header>
       <!-- end header -->
@@ -93,7 +103,7 @@
           <div class="card-single">
             <div>
               <h1>54</h1>
-              <span>Customers</span>
+              <span>Funcionários</span>
             </div>
             <div>
               <i class="las la-users"></i>
@@ -103,7 +113,7 @@
           <div class="card-single">
             <div>
               <h1>79</h1>
-              <span>Projects</span>
+              <span>Férias a vencer nos próximos 60 dias</span>
             </div>
             <div>
               <i class="las la-clipboard"></i>
@@ -113,7 +123,7 @@
           <div class="card-single">
             <div>
               <h1>124</h1>
-              <span>Orders</span>
+              <span>Tarefas a concluir</span>
             </div>
             <div>
               <i class="las la-shopping-bag"></i>
@@ -122,8 +132,8 @@
 
           <div class="card-single">
             <div>
-              <h1>$6k</h1>
-              <span>Income</span>
+              <h1>R$100,00</h1>
+              <span>Clientes em atraso</span>
             </div>
             <div>
               <i class="lab la-google-wallet"></i>
@@ -135,71 +145,71 @@
           <div class="projects">
             <div class="card">
               <div class="card-header">
-                <h3>Recent Projects</h3>
-                <button>See all <i class="las la-arrow-right"></i></button>
+                <h3>Tarefas em andamento</h3>
+                <button>Ver mais <i class="las la-arrow-right"></i></button>
               </div>
               <div class="card-body">
                 <div class="table-responsive">
                   <table width="100%">
                     <thead>
                       <tr>
-                        <td>Project Title</td>
-                        <td>Department</td>
+                        <td>Atividade</td>
+                        <td>Departamento</td>
                         <td>Status</td>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>UI/UX Design</td>
-                        <td>UI Team</td>
+                        <td>Folha de Pagamento | Valentinus</td>
+                        <td>Depto. Pessoal</td>
                         <td>
                           <span class="status purple"></span>
-                          review
+                          Concluída
                         </td>
                       </tr>
 
                       <tr>
-                        <td>Web Development</td>
-                        <td>Frontend</td>
+                        <td>Cálculo do Simples | Padaria Rio de Contas</td>
+                        <td>Depto. Fiscal</td>
                         <td>
                           <span class="status pink"></span>
-                          in progress
+                          dentro do prazo
                         </td>
                       </tr>
 
                       <tr>
-                        <td>Ushop app</td>
-                        <td>Mobile Team</td>
+                        <td>Cálculo de Férias | Distribuidora de Doces</td>
+                        <td>Depto. Pessoal</td>
                         <td>
                           <span class="status orange"></span>
-                          pending
+                          pendente
                         </td>
                       </tr>
 
                       <tr>
-                        <td>UI/UX Design</td>
-                        <td>UI Team</td>
+                        <td>Folha de Pagamento | Valentinus</td>
+                        <td>Depto. Pessoal</td>
                         <td>
                           <span class="status purple"></span>
-                          review
+                          Concluída
                         </td>
                       </tr>
 
                       <tr>
-                        <td>Web Development</td>
-                        <td>Frontend</td>
+                        <td>Cálculo do Simples | Padaria Rio de Contas</td>
+                        <td>Depto. Fiscal</td>
                         <td>
                           <span class="status pink"></span>
-                          in progress
+                          dentro do prazo
                         </td>
                       </tr>
 
                       <tr>
-                        <td>Ushop app</td>
-                        <td>Mobile Team</td>
+                        <td>Cálculo de Férias | Distribuidora de Doces</td>
+                        <td>Depto. Pessoal</td>
                         <td>
                           <span class="status orange"></span>
-                          pending
+                          pendente
                         </td>
                       </tr>
                     </tbody>
@@ -212,8 +222,8 @@
           <div class="customers">
             <div class="card">
               <div class="card-header">
-                <h3>New customer</h3>
-                <button>See all <i class="las la-arrow-right"></i></button>
+                <h3>Contatos</h3>
+                <button>Ver mais <i class="las la-arrow-right"></i></button>
               </div>
               <div class="card-body">
                 <div class="customer">
@@ -226,8 +236,8 @@
                       srcset=""
                     />
                     <div>
-                      <h4>Lewis S. Cunningham</h4>
-                      <small>CEO Excerpt</small>
+                      <h4>Pablo George</h4>
+                      <small>A.M.S Ind.e com de Artef.de Papeis Ltda</small>
                     </div>
                   </div>
 
@@ -248,8 +258,8 @@
                       srcset=""
                     />
                     <div>
-                      <h4>Lewis S. Cunningham</h4>
-                      <small>CEO Excerpt</small>
+                      <h4>Pablo George</h4>
+                      <small>A.M.S Ind.e com de Artef.de Papeis Ltda</small>
                     </div>
                   </div>
 
@@ -270,8 +280,8 @@
                       srcset=""
                     />
                     <div>
-                      <h4>Lewis S. Cunningham</h4>
-                      <small>CEO Excerpt</small>
+                      <h4>Pablo George</h4>
+                      <small>A.M.S Ind.e com de Artef.de Papeis Ltda</small>
                     </div>
                   </div>
 
@@ -292,8 +302,8 @@
                       srcset=""
                     />
                     <div>
-                      <h4>Lewis S. Cunningham</h4>
-                      <small>CEO Excerpt</small>
+                      <h4>Pablo George</h4>
+                      <small>A.M.S Ind.e com de Artef.de Papeis Ltda</small>
                     </div>
                   </div>
 

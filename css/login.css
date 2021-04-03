@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+:root {
+  --primary-color: #0a3d62;  
+  --text-grey: #8390a2;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +32,7 @@ section .imgBx:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(225deg, #2c3e50, #227093);
+  background: linear-gradient(255deg, var(--primary-color), #000);
   z-index: 1;
   mix-blend-mode: screen;
 }
@@ -49,17 +54,22 @@ section .contentBx {
   height: 100%;
 }
 
+section .contentBx img {
+  width: 90%;
+  margin-bottom: 32px;
+}
+
 section .contentBx .formBx {
   width: 50%;
 }
 
 section .contentBx .formBx h2 {
-  color: #607d8b;
+  color: var(--text-grey);
   font-weight: 600;
   font-size: 1.5rem;
   text-transform: uppercase;
   margin-bottom: 20px;
-  border-bottom: 4px solid #227093;
+  border-bottom: 4px solid var(--primary-color);
   display: inline-block;
   letter-spacing: 1px;
 }
@@ -71,7 +81,7 @@ section .contentBx .formBx .inputBx {
 section .contentBx .formBx .inputBx span {
   margin-bottom: 5px;
   display: inline-block;
-  color: #2c3e50;
+  color: var(--primary-color);
   font-weight: 300;
   letter-spacing: 1px;
 }
@@ -81,20 +91,20 @@ section .contentBx .formBx .inputBx input {
   padding: 10px 20px;
   outline: none;
   font-weight: 400;
-  border: 1px solid #2c3e50;
+  border: 1px solid var(--primary-color);
   letter-spacing: 1px;
-  color: #2c3e50;
+  color: var(--text-grey);
   background: transparent;
   border-radius: 10px;
 }
 
 section .contentBx .formBx .inputBx input:focus {
-  border: 1px solid #227093;
-  box-shadow: 0 0 5px #227093;   
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-color);
 }
 
 section .contentBx .formBx .inputBx input[type="submit"] {
-  background: #227093;
+  background: var(--primary-color);
   color: #fff;
   outline: none;
   border: none;
@@ -103,21 +113,21 @@ section .contentBx .formBx .inputBx input[type="submit"] {
 }
 
 section .contentBx .formBx .inputBx input[type="submit"]:hover {
-  filter: brightness(0.9);
+  filter: brightness(0.7);
 }
 
 section .contentBx .formBx .remember {
   margin-bottom: 10px;
-  color: #2c3e50;
+  color: var(--primary-color);
   font-weight: 400;
   font-size: 0.9rem;
 }
 
 section .contentBx .formBx .inputBx p {
-  color: #2c3e50;
+  color: var(--text-grey);
 }
 section .contentBx .formBx .inputBx p a {
-  color: #227093;
+  color: var(--primary-color);
 }
 
 @media (max-width: 768px) {
