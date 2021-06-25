@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: 60px 1fr 40px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar content"
+    "sidebar footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.content {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 100px);
+  background: lightblue;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
